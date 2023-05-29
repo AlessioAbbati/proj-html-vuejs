@@ -12,25 +12,25 @@ export default {
         return {
             cards: [
                 {
-                    img: '../assets/img/player1',
+                    img: 'src/assets/img/player1.jpg',
                     number: '07',
                     name: 'Adam Brown',
                     role: 'Forwarder',
                 },
                 {
-                    img: '../assets/img/player2',
+                    img: 'src/assets/img/player2.jpg',
                     number: '09',
                     name: 'Michael Kayn',
                     role: 'Forwarder',
                 },
                 {
-                    img: '../assets/img/player3',
+                    img: 'src/assets/img/player3.jpg',
                     number: '11',
                     name: 'Michael Lee',
                     role: 'Forwarder',
                 },
                 {
-                    img: '../assets/img/player4',
+                    img: 'src/assets/img/player4.jpg',
                     number: '15',
                     name: 'Ethan Smith',
                     role: 'Midfielder',
@@ -39,7 +39,6 @@ export default {
         }
     },
 };
-
 </script>
 
 <template>

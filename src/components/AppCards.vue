@@ -8,7 +8,7 @@ export default {
 
 <template>
   <div class="card d-flex justify-content-center align-items-center">
-    <img :src="card.img" alt="img">
+    <img :src="card.img" :alt="card.name">
     <div class="info d-flex flex-column justify-content-center align-items-center">
         <span>{{ card.number }}</span>
         <span>{{ card.name }}</span>
