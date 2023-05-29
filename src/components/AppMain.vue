@@ -1,12 +1,14 @@
 <script>
 import AppMatches from "./AppMatches.vue"
 import AppCards from "./AppCards.vue"
+import AppRank from './AppRank.vue';
 
 
 export default {
     components: { 
         AppMatches,
         AppCards,
+        AppRank,
     },
     data() {
         return {
@@ -36,6 +38,7 @@ export default {
                     role: 'Midfielder',
                 },
             ],
+            
         }
     },
 };
@@ -55,6 +58,11 @@ export default {
         />
     </div>
     <button><small>View All Players</small></button>
+  </section>
+  <section class="rankings">
+    <div class="rank">
+       <app-rank />
+    </div>
   </section>
 </template>
 
