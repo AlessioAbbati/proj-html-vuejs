@@ -16,6 +16,12 @@ export default {
 <style lang="scss" scoped>
 a {
     text-decoration: none;
+    color: white;
+    font-weight: 700;
+    &:hover {
+        text-decoration-line: underline;
+        cursor: cell;
+    }
 }
 </style>
 
