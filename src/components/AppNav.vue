@@ -1,6 +1,4 @@
-<script>
-
-</script>
+<script></script>
 
 <template>
   
@@ -9,3 +7,6 @@
 <style lang="scss" scoped>
 
 </style>
+
+
+
