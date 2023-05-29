@@ -2,8 +2,43 @@
 import AppNav from './AppNav.vue'
 export default {
   components: { AppNav },
+  data() {
+        return {
+            arrList: [
+                {
+                    title: 'HOME',
+                    link: '#' ,
+                },
+                {
+                    title: 'FIXTURES & RESULTS',
+                    link: '#',
+                },
+                {
+                    title: 'LEAGUE TABLE',
+                    link: '#', 
+                },
+                {
+                    title: 'PLAYERS',
+                    link: '#', 
+                },
+                {
+                    title: 'GALLERY',
+                    link: '#', 
+                },
+                {
+                    title: 'BLOG',
+                    link: '#', 
+                },
+                {
+                    title: 'CONTACT',
+                    link: '#', 
+                },
+            ]
+            
+        }
+    }
 
-}
+};
 </script>
 
 <template>
@@ -15,7 +50,12 @@ export default {
     <!-- <font-awesome-icon class="icon" :icon="['fab', 'facebook-f']" />
     <font-awesome-icon class="icon" :icon="['fab', 'instagram']" />
     <font-awesome-icon class="icon" :icon="['fab', 'twitter']" /> -->
-    <app-nav />
+    <app-nav 
+        v-for="title in arrList" 
+        :key="title.title" 
+        :title="title.title" 
+        :link="title.link" 
+    />
   </div>
   </header>
 </template>
