@@ -69,26 +69,59 @@ export default {
             </nav>
             <!-- <font-awesome-icon :icon="['fas', 'bars-staggered']" /> -->
         </div>
+        <div class="carousel d-flex justify-content-between align-items-center">
+            <font-awesome-icon class="chevron" :icon="['fas', 'chevron-left']" />
+            <div class="text d-flex flex-column align-items-center">
+                <h1>Football Club</h1>
+                <h1>Sport club</h1>
+                <small>Private football matches</small>
+                <button><small>Learn More</small></button>
+            </div>
+            <font-awesome-icon class="chevron" :icon="['fas', 'chevron-right']" />
+        </div>
     </header>
 </template>
 
 <style lang="scss" scoped>
 header {
-    height: 45rem;
+    height: 40rem;
     width: 100%;
     background-image: url('../assets/img/slider2-1.jpg');
-    background-size: contain;
     background-size: cover;
 
     .black {
         background-color: rgba($color: #000000, $alpha: 0.5);
-
         .icon {
             font-size: 2rem;
             margin-left: 10px;
             color: white;
         }
-
+    }
+    .carousel {
+        margin-top: 3rem;
+        .text {
+        color: white;
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+        button {
+            background-color: transparent;
+            border-radius: 1.3rem;
+            padding: .7rem;
+            color: white;
+            border: 2px solid white;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+    }
+        .chevron {
+           color: white;
+           border: 1px solid white;
+           border-radius: 100%;
+           font-size: 2rem;
+           margin: 0 1rem;
+        }
     }
 }
 </style>
