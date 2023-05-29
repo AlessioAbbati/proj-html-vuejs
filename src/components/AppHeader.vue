@@ -27,8 +27,8 @@ header {
     background-image: url('../assets/img/slider2-1.jpg');
     background-size: contain;
     background-size: cover;
-    .icon {
-        color: red;
+    .logos {
+        background-color: rgba($color: #000000, $alpha: 0.5);
     }
 }
 </style>
