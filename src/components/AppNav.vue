@@ -8,13 +8,13 @@ export default {
 </script>
 
 <template>
-    <ul class="head_list list-unstyled">
-        <li><a href="#">{{ title }}</a></li>
-    </ul>
+    <li><a href="#">{{ title }}</a></li>
 </template>
 
 <style lang="scss" scoped>
-a {
+li {
+    padding-inline: 1rem;
+    a {
     text-decoration: none;
     color: white;
     font-weight: 700;
@@ -22,6 +22,7 @@ a {
         text-decoration-line: underline;
         cursor: cell;
     }
+}
 }
 </style>
 

@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div>
     <app-header />
     <app-main />
     <app-footer />
