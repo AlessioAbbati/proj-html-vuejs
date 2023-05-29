@@ -63,12 +63,13 @@ export default {
     background-image: url('../assets/img/player.jpg');
     h3 {
         color: white;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
     }
     .card {
-        gap: 10rem;
         background-color: transparent;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-inline: 1rem;
+        border-radius: 2rem;
     }
     button {
         color: white;
@@ -76,6 +77,8 @@ export default {
         border: 1px solid white;
         border-radius: 3rem;
         padding: .6rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 }
 </style>
