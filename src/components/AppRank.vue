@@ -114,6 +114,15 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+thead {
+    background-color: black;
+    color: white;
+}
+tbody {
+    background-color: #F3F3F3;
+    img {
+        width: 50%;
+    }
+}
 </style>
 

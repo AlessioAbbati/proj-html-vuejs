@@ -149,14 +149,18 @@ export default {
   </section>
   <section class="rankings d-flex justify-content-around">
     <div class="rank">
+       <h2 class="text-center text-dark">League Table</h2>
        <app-rank />
     </div>
     <div class="results">
-       <app-results 
-            v-for="result in this.results" 
-            :key="result"
-            :info="result"
-       />
+       <h2 class="text-center text-dark">Fixtures & Results</h2>
+       <div class="container">
+            <app-results 
+                v-for="result in this.results" 
+                :key="result"
+                :info="result"
+            />
+       </div>
     </div>
   </section>
   <section class="bet">
@@ -213,6 +217,20 @@ export default {
         padding: .6rem;
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+}
+
+.rankings {
+    h2 {
+        margin: 2rem 0;
+    }
+    .container {
+        & > :nth-child(odd) {
+            background-color: #EBEBEB;
+        }
+        & > :nth-child(even) {
+            background-color: #F3F3F3;
+        }
     }
 }
 
