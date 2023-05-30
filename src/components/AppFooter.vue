@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="content d-flex flex-column">
-                    <div class="img">
+                    <div class="img d-flex justify-content-start">
                         <img src="../assets/img/logo-footer-football.png" alt="">
                     </div>
                     <div class="info">
