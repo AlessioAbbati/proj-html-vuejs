@@ -11,8 +11,7 @@
                     </div>
                     <div class="info">
                         <span class="d-flex align-items-center justify-content-start">
-                            <font-awesome-icon :icon="['fas', 'location-dot']" />
-                            <font-awesome-icon :icon="['fas', 'location-pin']" />
+                            <i class="fa-solid fa-location-dot"></i>
                             <p>New Jersey, USA</p>
                         </span>
                         <span class="d-flex align-items-center justify-content-start">
@@ -25,9 +24,15 @@
                         </span>
                     </div>
                     <div class="socials d-flex justify-content-around">
-                        <font-awesome-icon class="icon" :icon="['fab', 'facebook-f']" />
-                        <font-awesome-icon class="icon" :icon="['fab', 'instagram']" />
-                        <font-awesome-icon class="icon" :icon="['fab', 'twitter']" />
+                        <div class="icon">
+                            <font-awesome-icon :icon="['fab', 'facebook-f']" />
+                        </div>
+                        <div class="icon">
+                            <font-awesome-icon :icon="['fab', 'instagram']" />
+                        </div>
+                        <div class="icon">
+                            <font-awesome-icon :icon="['fab', 'twitter']" />
+                        </div>
                     </div>
                 </div>              
             </div>
@@ -59,7 +64,13 @@ footer {
     background-size: cover;
     .content {
         color: white;
-        border: 1px solid white;
+        margin: 3rem 1rem;
+        .img {
+            width: 100%;
+            img {
+             width: 20%;
+            }
+        }
         .info {
             span {
                 vertical-align: middle;
@@ -69,7 +80,7 @@ footer {
             font-size: 1.5rem;
             .icon {
                 border: 1px solid white;
-                
+                padding-inline: 1rem;
             }
         }
     }
