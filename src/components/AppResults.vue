@@ -37,6 +37,9 @@ export default {
             img {
                 width: 30%;
             }
+            span {
+                margin-top: 1rem;
+            }
 
             .info {
                 white-space: nowrap;
