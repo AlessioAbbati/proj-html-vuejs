@@ -9,18 +9,18 @@ export default {
 <template>
     <div class="row">
         <div class="col-sm">
-            <div class="content d-flex">
+            <div class="content d-flex align-items-center">
                 <img :src="info.logo1" alt="">
                 <p>{{ info.team1 }}</p>
             </div>
         </div>
         <div class="col-sm">
-            <div class="content d-flex justify-content-center">
+            <div class="content d-flex justify-content-center align-items-center">
                 <p>VS</p>
             </div>
         </div>
         <div class="col-sm">
-            <div class="content d-flex d-flex">
+            <div class="content d-flex align-items-center">
                 <p>{{ info.team2 }}</p>
                 <img :src="info.logo2" alt="">
             </div>

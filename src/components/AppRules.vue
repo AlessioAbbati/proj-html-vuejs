@@ -10,7 +10,7 @@ export default {
   <div class="card d-flex flex-column">
     <div class="img d-flex flex-column align-items-center">
         <img :src="football.img" :alt="football.title">
-        <small>{{ football.date }}</small>
+        <small>{{ football.date }} - Football</small>
     </div>
     <div class="info d-flex flex-column align-items-center">
         <h2>{{ football.title }}</h2>
