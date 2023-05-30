@@ -5,7 +5,7 @@ export default {
             rankings: [
                 {
                     position: '1',
-                    logo: 'src/assets/img/league-club-1',
+                    logo: 'src/assets/img/league-club-1.png',
                     team: 'Instanbul Sports',
                     wins: '18',
                     draws: '2',
@@ -13,7 +13,7 @@ export default {
                 },
                 {
                     position: '2',
-                    logo: 'src/assets/img/league-club-2',
+                    logo: 'src/assets/img/league-club-2.png',
                     team: 'United Fs Club',
                     wins: '14',
                     draws: '2',
@@ -21,7 +21,7 @@ export default {
                 },
                 {
                     position: '3',
-                    logo: 'src/assets/img/league-club-3',
+                    logo: 'src/assets/img/league-club-3.png',
                     team: 'Schalke Club',
                     wins: '13',
                     draws: '3',
@@ -29,7 +29,7 @@ export default {
                 },
                 {
                     position: '4',
-                    logo: 'src/assets/img/league-club-4',
+                    logo: 'src/assets/img/league-club-4.png',
                     team: 'Inter Club',
                     wins: '13',
                     draws: '2',
@@ -37,7 +37,7 @@ export default {
                 },
                 {
                     position: '5',
-                    logo: 'src/assets/img/league-club-5',
+                    logo: 'src/assets/img/league-club-5.png',
                     team: 'Madrid Club',
                     wins: '12',
                     draws: '1',
@@ -45,7 +45,7 @@ export default {
                 },
                 {
                     position: '6',
-                    logo: 'src/assets/img/league-club-6',
+                    logo: 'src/assets/img/league-club-6.png',
                     team: 'Borussia Club',
                     wins: '11',
                     draws: '0',
@@ -53,7 +53,7 @@ export default {
                 },
                 {
                     position: '7',
-                    logo: 'src/assets/img/league-club-7',
+                    logo: 'src/assets/img/league-club-7.png',
                     team: 'Arsenal Club',
                     wins: '10',
                     draws: '5',
@@ -61,7 +61,7 @@ export default {
                 },
                 {
                     position: '8',
-                    logo: 'src/assets/img/league-club-8',
+                    logo: 'src/assets/img/league-club-8.png',
                     team: 'Bayern Club',
                     wins: '10',
                     draws: '2',
@@ -69,7 +69,7 @@ export default {
                 },
                 {
                     position: '9',
-                    logo: 'src/assets/img/league-club-9',
+                    logo: 'src/assets/img/league-club-9.png',
                     team: 'Atletico Club',
                     wins: '9',
                     draws: '0',
