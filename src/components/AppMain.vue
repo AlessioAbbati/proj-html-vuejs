@@ -137,6 +137,15 @@ export default {
   <section class="sponsor d-flex align-items-center justify-content-around">
     <app-sponsor />
   </section>
+  <section class="rules d-flex flex-column align-items-center">
+     <div>
+        <div class="logo d-flex flex-column align-items-center">
+            <img src="../assets/img/OIP.jpg" alt="">
+            <h2>Results & new articles</h2>
+            <small>Be aware of the football world</small>
+        </div>
+     </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -170,5 +179,17 @@ export default {
     background-color: black;
     height: 12rem;
     padding-inline: 1rem;
+}
+.rules {
+    .logo{
+        width: 100%;
+        margin-top: 3rem;
+        img {
+            width: 20%;
+        }
+        h2 {
+            font-weight: 700;
+        }
+    }
 }
 </style>
