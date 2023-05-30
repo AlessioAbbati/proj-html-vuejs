@@ -2,6 +2,14 @@
 export default {
     props: {
         football: Object,
+    },
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+        
     }
 }
 </script>

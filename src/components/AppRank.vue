@@ -80,7 +80,7 @@ export default {
     },
     methods: {
         calculatePoints(team) {
-        return ((team.wins * 3) + team.draws);
+        return ((parseInt(team.wins) * 3) + parseInt(team.draws));
         }
     },
 }
