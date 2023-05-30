@@ -37,8 +37,11 @@
                 </div>              
             </div>
             <div class="col-md-5">
-                <div class="content">
-                    
+                <div class="content d-flex flex-column ">
+                    <h1>Join our newsletter</h1>
+                    <p>Subscribe to be informed about important developments in our club and football world.</p>
+                    <input type="text" placeholder="Your Email Address">
+                    <button>Subscribe &RightArrow;</button>
                 </div>
             </div>
             <div class="col-md-2">
@@ -82,6 +85,15 @@ footer {
                 border: 1px solid white;
                 padding-inline: 1rem;
             }
+        }
+        input {
+            margin-bottom: .5rem;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+        button {
+            padding: 1rem;
+            border-radius: 1rem;
         }
     }
 }
