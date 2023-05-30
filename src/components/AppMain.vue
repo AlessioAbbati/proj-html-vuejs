@@ -3,6 +3,7 @@ import AppMatches from "./AppMatches.vue"
 import AppCards from "./AppCards.vue"
 import AppRank from './AppRank.vue';
 import AppResults from './AppResults.vue';
+import AppSponsor from './AppSponsor.vue';
 
 
 export default {
@@ -11,6 +12,7 @@ export default {
         AppCards,
         AppRank,
         AppResults,
+        AppSponsor,
     },
     data() {
         return {
@@ -97,7 +99,6 @@ export default {
                 },
 
             ],
-            
         }
     },
 };
@@ -130,9 +131,12 @@ export default {
        />
     </div>
   </section>
-  <div class="bet">
+  <section class="bet">
     <img class="img-fluid" src="../assets/img/reklam.jpg" alt="">
-  </div>
+  </section>
+  <section class="sponsor d-flex align-items-center justify-content-around">
+    <app-sponsor />
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -160,5 +164,11 @@ export default {
 }
 .bet {
     width: 100%;
+}
+.sponsor {
+    width: 100%;
+    background-color: black;
+    height: 12rem;
+    padding-inline: 1rem;
 }
 </style>
