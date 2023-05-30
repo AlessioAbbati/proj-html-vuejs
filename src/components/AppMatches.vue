@@ -1,18 +1,38 @@
-<script></script>
+<script>
+export default {
+  props: {
+    match: Object,
+  }
+}
+</script>
 
 <template>
-    
+  <div class="row">
+    <div class="col-sm d-flex align-items-center">
+      <h2>Instanbul Sports</h2>
+      <img :src="match.logo1" alt="">
+    </div>
+    <div class="col-sm d-flex align-items-center justify-content-center">
+      <span>VS</span>
+    </div>
+    <div class="col-sm d-flex align-items-center">
+      <img :src="match.logo2" alt="">
+      <h2>United Fs Club</h2>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.sec_carousel {
+.row {
+  div {
     h2 {
     white-space: nowrap;
     }
-    p {
+    span {
     font-size: 6rem;
     font-weight: 700;
     }
+  }
 }
 </style>
 

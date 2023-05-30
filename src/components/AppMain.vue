@@ -18,6 +18,44 @@ export default {
     },
     data() {
         return {
+            matches: [
+                {
+                    logo1: 'src/assets/img/club-1.png',
+                    logo2: 'src/assets/img/club-2.png',
+                    date: 'May 21, 2022 18.05 pm',
+                    stadium: 'Expert Stadium',
+                },
+                {
+                    logo1: 'src/assets/img/club-3.png',
+                    logo2: 'src/assets/img/club-4.png',
+                    date: 'May 21, 2022 18.05 pm',
+                    stadium: 'Expert Stadium',
+                },
+                {
+                    logo1: 'src/assets/img/club-9.png',
+                    logo2: 'src/assets/img/club-6.png',
+                    date: 'May 21, 2022 18.05 pm',
+                    stadium: 'Expert Stadium',
+                },
+                {
+                    logo1: 'src/assets/img/club-2.png',
+                    logo2: 'src/assets/img/club-8.png',
+                    date: 'May 21, 2022 18.05 pm',
+                    stadium: 'Expert Stadium',
+                },
+                {
+                    logo1: 'src/assets/img/club-7.png',
+                    logo2: 'src/assets/img/club-4.png',
+                    date: 'May 21, 2022 18.05 pm',
+                    stadium: 'Expert Stadium',
+                },
+                {
+                    logo1: 'src/assets/img/club-1.png',
+                    logo2: 'src/assets/img/club-2.png',
+                    date: 'May 21, 2022 18.05 pm',
+                    stadium: 'Expert Stadium',
+                },
+            ],
             cards: [
                 {
                     img: 'src/assets/img/player1.jpg',
@@ -134,7 +172,14 @@ export default {
 
 <template>
   <section class="matches">
-    <app-matches />
+    <div class="container">
+       <h1 class="text-center text-light">Upcoming Matches</h1>
+       <app-matches 
+            v-for="match in this.matches"
+            :key="match"
+            :match="match"
+       />
+    </div>
   </section>
   <section class="cards d-flex flex-column align-items-center">
     <h3>Players</h3>
@@ -194,6 +239,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.matches {
+    background-image: url('../assets/img/saha.jpg');
+}
 .cards {
     background-image: url('../assets/img/player.jpg');
 
