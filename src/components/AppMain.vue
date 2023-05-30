@@ -187,7 +187,7 @@ export default {
 </script>
 
 <template>
-    <section class="matches">
+    <section class="matchDay">
         <div class="container">
             <app-match-day
                 v-for="match in this.matchDay"
@@ -195,6 +195,8 @@ export default {
                 :matchDay="match"
             />
         </div>
+    </section>
+    <section class="matches">
         <div class="container">
             <h1 class="text-center text-light">Upcoming Matches</h1>
             <app-matches 
@@ -250,18 +252,21 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+.matchDay {
+    margin-top: 1rem;
+}
 .matches {
     background-image: url('../assets/img/saha.jpg');
     background-size: cover;
     .container {
         h1 {
-            margin: 2rem 0;
+            padding-top: 2rem;
+            margin-bottom: 2rem;
         }
     }
 }
 .cards {
     background-image: url('../assets/img/player.jpg');
-
     h3 {
         color: white;
         margin-top: 2rem;
