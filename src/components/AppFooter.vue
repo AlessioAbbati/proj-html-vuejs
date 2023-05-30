@@ -46,12 +46,24 @@
             </div>
             <div class="col-md-2">
                 <div class="content">
-                    
+                    <h2>Education</h2>
+                    <ul>
+                        <li><a href="#">FIXTURES & RESULTS</a></li>
+                        <li><a href="#">LEAGUE TABLE</a></li>
+                        <li><a href="#">PLAYERS</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="col-md-2">
                 <div class="content">
-                    
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -65,37 +77,61 @@ footer {
     width: 100%;
     background-image: url('../assets/img/footer-bg-football.jpg');
     background-size: cover;
+
     .content {
         color: white;
         margin: 3rem 1rem;
+
         .img {
             width: 100%;
+
             img {
-             width: 20%;
+                width: 20%;
             }
         }
+
         .info {
             span {
                 vertical-align: middle;
             }
         }
+
         .socials {
             font-size: 1.5rem;
+
             .icon {
                 border: 1px solid white;
                 padding-inline: 1rem;
             }
         }
+
         input {
             margin-bottom: .5rem;
             padding: 1rem;
             border-radius: 1rem;
         }
+
         button {
             padding: 1rem;
             border-radius: 1rem;
         }
+
+        h2 {
+            white-space: nowrap;
+        }
+
+        ul {
+            list-style: square;
+            li {
+                white-space: nowrap;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
     }
-}
-</style>
+}</style>
 
