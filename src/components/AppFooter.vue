@@ -12,15 +12,15 @@
                     <div class="info">
                         <span class="d-flex align-items-center justify-content-start">
                             <i class="fa-solid fa-location-dot"></i>
-                            <p>New Jersey, USA</p>
+                            <span>New Jersey, USA</span>
                         </span>
                         <span class="d-flex align-items-center justify-content-start">
                             <font-awesome-icon :icon="['fas', 'phone-volume']" />
-                            <p>+1 (234) 567 89 10</p> 
+                            <span>+1 (234) 567 89 10</span> 
                         </span>
                         <span class="d-flex align-items-center justify-content-start">
                             <font-awesome-icon :icon="['far', 'envelope']" />
-                            <p>example@example.com</p>
+                            <span>example@example.com</span>
                         </span>
                     </div>
                     <div class="socials d-flex justify-content-around">
@@ -40,7 +40,7 @@
                 <div class="content d-flex flex-column ">
                     <h1>Join our newsletter</h1>
                     <p>Subscribe to be informed about important developments in our club and football world.</p>
-                    <input type="text" placeholder="Your Email Address">
+                    <input type="mail" placeholder="Your Email Address">
                     <button>Subscribe &RightArrow;</button>
                 </div>
             </div>
@@ -85,6 +85,7 @@ footer {
 
         .img {
             width: 100%;
+            margin-bottom: 1rem;
 
             img {
                 width: 20%;
@@ -93,7 +94,8 @@ footer {
 
         .info {
             span {
-                vertical-align: middle;
+                margin-bottom: .6rem;
+                padding-inline: .6rem;
             }
         }
 

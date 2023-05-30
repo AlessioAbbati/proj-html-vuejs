@@ -67,7 +67,6 @@ export default {
                     />
                 </ul>
             </nav>
-            <!-- <font-awesome-icon :icon="['fas', 'bars-staggered']" /> -->
         </div>
         <div class="carousel d-flex justify-content-between align-items-center">
             <font-awesome-icon class="chevron" :icon="['fas', 'chevron-left']" />

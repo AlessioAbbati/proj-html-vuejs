@@ -20,7 +20,7 @@ li {
     font-weight: 700;
     &:hover {
         text-decoration-line: underline;
-        cursor: cell;
+        cursor: pointer;
     }
 }
 }

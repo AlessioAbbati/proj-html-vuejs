@@ -11,17 +11,17 @@ export default {
         <div class="col-sm">
             <div class="content d-flex align-items-center">
                 <img :src="info.logo1" alt="">
-                <p>{{ info.team1 }}</p>
+                <div class="info">{{ info.team1 }}</div>
             </div>
         </div>
         <div class="col-sm">
             <div class="content d-flex justify-content-center align-items-center">
-                <p>VS</p>
+                <span>VS</span>
             </div>
         </div>
         <div class="col-sm">
             <div class="content d-flex align-items-center">
-                <p>{{ info.team2 }}</p>
+                <div class="info">{{ info.team2 }}</div>
                 <img :src="info.logo2" alt="">
             </div>
         </div>
@@ -38,7 +38,7 @@ export default {
                 width: 30%;
             }
 
-            p {
+            .info {
                 white-space: nowrap;
             }
 
