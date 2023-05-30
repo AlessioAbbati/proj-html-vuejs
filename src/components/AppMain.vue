@@ -217,12 +217,14 @@ export default {
         <div class="rank">
             <h2 class="text-center text-dark">League Table</h2>
             <app-rank />
+            <button>View Full League Table</button>
         </div>
         <div class="results">
             <h2 class="text-center text-dark">Fixtures & Results</h2>
             <div class="container">
                 <app-results v-for="result in this.results" :key="result" :info="result" />
             </div>
+            <button>View Full Fixtures</button>
         </div>
     </section>
     <section class="bet">
@@ -301,6 +303,12 @@ export default {
         & > :nth-child(even) {
             background-color: #F3F3F3;
         }
+    }
+    button {
+        width: 100%;
+        padding: 1rem;
+        background-color: black;
+        color: white;
     }
 }
 
