@@ -253,6 +253,11 @@ export default {
 .matches {
     background-image: url('../assets/img/saha.jpg');
     background-size: cover;
+    .container {
+        h1 {
+            margin: 2rem 0;
+        }
+    }
 }
 .cards {
     background-image: url('../assets/img/player.jpg');

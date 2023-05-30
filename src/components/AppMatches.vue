@@ -41,6 +41,7 @@ export default {
 <style lang="scss" scoped>
 .row {
   background-color: rgba($color: #000000, $alpha: 0.2);
+  margin-bottom: 1rem;
   div {
     .content {
       
@@ -49,7 +50,8 @@ export default {
       color: white;
       }
       span {
-      font-size: 3rem;
+      margin-top: 1rem;
+      font-size: 4rem;
       color: white;
       font-weight: 700;
       }
@@ -60,19 +62,3 @@ export default {
   }
 }
 </style>
-
-<!-- <div class="container">
-      <div class="row">
-        <div class="col-sm d-flex align-items-center">
-          <h2>Instanbul Sports</h2>
-          <img src="../assets/img/club-1.png" alt="">
-        </div>
-        <div class="col-sm d-flex align-items-center justify-content-center">
-          <p>VS</p>
-        </div>
-        <div class="col-sm d-flex align-items-center">
-          <img src="../assets/img/club-2.png" alt="">
-          <h2>United Fs Club</h2>
-        </div>
-      </div>
-    </div> -->
