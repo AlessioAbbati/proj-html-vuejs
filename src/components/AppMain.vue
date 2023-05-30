@@ -4,6 +4,7 @@ import AppCards from "./AppCards.vue"
 import AppRank from './AppRank.vue';
 import AppResults from './AppResults.vue';
 import AppSponsor from './AppSponsor.vue';
+import AppRules from './AppRules.vue';
 
 
 export default {
@@ -13,6 +14,7 @@ export default {
         AppRank,
         AppResults,
         AppSponsor,
+        AppRules,
     },
     data() {
         return {
@@ -99,6 +101,32 @@ export default {
                 },
 
             ],
+            rules: [
+                {
+                    img: 'src/assets/img/news1-1.png',
+                    date: '29/05/2022 - football',
+                    title: 'What is Football',
+                    description: 'Football is a sport that is known as a ball game and is loved by [...]',
+                },
+                {
+                    img: 'src/assets/img/news2-1.png',
+                    date: '29/05/2022 - football',
+                    title: 'Football Rules',
+                    description: 'GOLDEN GOAL: in a football match, the goal scored by one of the teams in [...]',
+                },
+                {
+                    img: 'src/assets/img/news3-1.png',
+                    date: '29/05/2022 - football',
+                    title: 'Football Features',
+                    description: 'Football: it is an aerobic-based anaerobic sport in which jumps, kiks, turns, running with changing [...]',
+                },
+                {
+                    img: 'src/assets/img/news4-1.png',
+                    date: '29/05/2022 - football',
+                    title: 'Football Terms',
+                    description: 'GOLDEN GOAL: in a football match, the goal scored by one of the teams in [...]',
+                },
+            ]
         }
     },
 };
@@ -138,29 +166,45 @@ export default {
     <app-sponsor />
   </section>
   <section class="rules d-flex flex-column align-items-center">
-     <div>
-        <div class="logo d-flex flex-column align-items-center">
-            <img src="../assets/img/OIP.jpg" alt="">
-            <h2>Results & new articles</h2>
-            <small>Be aware of the football world</small>
-        </div>
-     </div>
+    <div>
+    <div class="logo d-flex flex-column align-items-center">
+        <img src="../assets/img/OIP.jpg" alt="">
+        <h2>Results & new articles</h2>
+        <small>Be aware of the football world</small>
+    </div>
+    </div>
+    <div class="d-flex">
+    <app-rules
+        v-for="rule in this.rules" 
+        :key="rule.title"
+        :football="rule"
+    />
+    </div>
+    <div class="buttons d-flex justify-content-center">
+        <button></button>
+        <button></button>
+        <button></button>
+        <button></button>        
+    </div>
   </section>
 </template>
 
 <style lang="scss" scoped>
 .cards {
     background-image: url('../assets/img/player.jpg');
+
     h3 {
         color: white;
         margin-top: 2rem;
         margin-bottom: 3rem;
     }
+
     .card {
         background-color: transparent;
         padding-inline: 1rem;
         border-radius: 2rem;
     }
+
     button {
         color: white;
         background-color: black;
@@ -171,25 +215,45 @@ export default {
         margin-bottom: 2rem;
     }
 }
+
 .bet {
     width: 100%;
 }
+
 .sponsor {
     width: 100%;
     background-color: black;
     height: 12rem;
     padding-inline: 1rem;
 }
+
 .rules {
-    .logo{
+    .logo {
         width: 100%;
         margin-top: 3rem;
+        margin-bottom: 2rem;
+
         img {
             width: 20%;
         }
+
         h2 {
             font-weight: 700;
         }
     }
-}
-</style>
+
+    .buttons {
+        margin-bottom: 3rem;
+
+        button {
+            padding: .2rem 1rem;
+            margin-inline: .5rem;
+            border-radius: 2rem;
+            background-color: #EBEBEB;
+
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}</style>
