@@ -2,7 +2,7 @@
 
 <template>
   <footer>
-    <div class="container-fluid">
+    <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-3">
                 <div class="content d-flex flex-column">
@@ -67,6 +67,7 @@
                 </div>
             </div>
         </div>
+        <small class="text-light">&copy; 2022 Football Club - All Right Reserved.</small>
     </div>
   </footer>
 </template>
