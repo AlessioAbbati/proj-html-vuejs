@@ -28,6 +28,9 @@ export default {
         <button @click="expandCard">More</button>
     </div>
   </div>
+  <!-- <div class="buttons d-flex align-items-end justify-content-center">
+    <button @click="expandCard"></button>
+  </div> -->
 </template>
 
 <style lang="scss" scoped>
@@ -39,7 +42,7 @@ export default {
     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.83);
     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.83);
     &.expanded {
-        width: 100%;
+        width: 50%;
         margin-inline: 0;
         margin-bottom: 5rem;
         transition: all 0.3s ease-in-out;
@@ -62,12 +65,16 @@ export default {
         }
     }
 }
+// .buttons {
+//     button {
+//         padding: .2rem 1rem;
+//         margin-inline: .5rem;
+//         border-radius: 2rem;
+//         background-color: #EBEBEB;
+
+//         &:hover {
+//             background-color: black;
+//         }
+//     }
+// }
 </style>
-
-
-&.expanded {
-    width: 100%;
-    margin-inline: 0;
-    margin-bottom: 5rem;
-    transition: all 0.3s ease-in-out;
-}

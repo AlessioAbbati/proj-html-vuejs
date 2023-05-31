@@ -245,10 +245,10 @@ export default {
             <app-rules v-for="rule in this.rules" :key="rule.title" :football="rule" />
         </div>
         <div class="buttons d-flex justify-content-center">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <button @click="expandCard"></button>
+            <button @click="expandCard"></button>
+            <button @click="expandCard"></button>
+            <button @click="expandCard"></button>
         </div>
     </section>
 </template>
@@ -337,7 +337,6 @@ export default {
             font-weight: 700;
         }
     }
-
     .buttons {
         margin-bottom: 3rem;
 
