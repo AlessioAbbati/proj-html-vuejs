@@ -59,6 +59,9 @@ export default {
   }
   .info {
     background-color: rgba($color: #000000, $alpha: 0.5);
+    span {
+      padding-inline: 2rem;
+    }
   }
 }
 </style>

@@ -58,6 +58,9 @@ export default {
   }
   .info {
     font-weight: 700;
+    span {
+        padding-inline: 2rem;
+    }
   }
   .btn {
     margin: 1rem 0 2rem 0;
