@@ -13,18 +13,13 @@ export default {
 
 <style lang="scss" scoped>
 li {
-    padding-inline: 1rem;
+    white-space: nowrap;
     a {
         text-decoration: none;
         color: white;
-        font-weight: 700;
         &:hover {
-            text-decoration-line: underline;
-            cursor: pointer;
+            text-decoration: underline;
         }
     }
 }
 </style>
-
-
-

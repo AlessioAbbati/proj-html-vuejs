@@ -1,4 +1,46 @@
-<script></script>
+<script>
+import AppEducation from './AppEducation.vue'
+import AppQuickLinks from './AppQuickLinks.vue'
+export default {
+  components: { AppEducation, AppQuickLinks },
+    data() {
+        return {
+            arrList: [
+                {
+                    title2: 'HOME',
+                    link: '#' ,
+                },
+                {
+                    title1: 'FIXTURES & RESULTS',
+                    link: '#',
+                },
+                {
+                    title1: 'LEAGUE TABLE',
+                    link: '#',
+                },
+                {
+                    title1: 'PLAYERS',
+                    link: '#',
+                },
+                {
+                    title1: 'GALLERY',
+                    link: '#',
+                },
+                {
+                    title2: 'BLOG',
+                    link: '#',
+                },
+                {
+                    title2: 'CONTACT',
+                    link: '#',
+                },
+
+            ],
+        }
+    }
+
+}
+</script>
 
 <template>
   <footer>
@@ -16,7 +58,7 @@
                         </span>
                         <span class="d-flex align-items-center justify-content-start">
                             <font-awesome-icon :icon="['fas', 'phone-volume']" />
-                            <span>+1 (234) 567 89 10</span> 
+                            <span>+1 (234) 567 89 10</span>
                         </span>
                         <span class="d-flex align-items-center justify-content-start">
                             <font-awesome-icon :icon="['far', 'envelope']" />
@@ -34,7 +76,7 @@
                             <font-awesome-icon :icon="['fab', 'twitter']" />
                         </div>
                     </div>
-                </div>              
+                </div>
             </div>
             <div class="col-md-5">
                 <div class="content d-flex flex-column ">
@@ -48,10 +90,7 @@
                 <div class="content">
                     <h2>Education</h2>
                     <ul>
-                        <li><a href="#">FIXTURES & RESULTS</a></li>
-                        <li><a href="#">LEAGUE TABLE</a></li>
-                        <li><a href="#">PLAYERS</a></li>
-                        <li><a href="#">GALLERY</a></li>
+                        <app-education v-for="title in arrList" :key="title.title" :title="title.title1" :link="title.link" />
                     </ul>
                 </div>
             </div>
@@ -59,10 +98,7 @@
                 <div class="content">
                     <h2>Quick Links</h2>
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">GALLERY</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <app-quick-links v-for="title in arrList" :key="title.title" :title="title.title2" :link="title.link" />
                     </ul>
                 </div>
             </div>
@@ -125,14 +161,6 @@ footer {
 
         ul {
             list-style: square;
-            li {
-                white-space: nowrap;
-
-                a {
-                    text-decoration: none;
-                    color: white;
-                }
-            }
         }
 
     }
