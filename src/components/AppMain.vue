@@ -206,14 +206,14 @@ export default {
             />
         </div>
     </section>
-    <section class="cards d-flex flex-column align-items-center">
+    <section id="players" class="cards d-flex flex-column align-items-center">
         <h3>Players</h3>
         <div class="card d-flex flex-row">
             <app-cards v-for="player in this.cards" :key="player.name" :card="player" />
         </div>
         <button><small>View All Players</small></button>
     </section>
-    <section class="rankings d-flex justify-content-around">
+    <section id="ranking" class="rankings d-flex justify-content-around">
         <div class="rank">
             <h2 class="text-center text-dark">League Table</h2>
             <app-rank />
@@ -230,10 +230,10 @@ export default {
     <section class="bet">
         <img class="img-fluid" src="../assets/img/reklam.jpg" alt="">
     </section>
-    <section class="sponsor d-flex align-items-center justify-content-around">
+    <section id="gallery" class="sponsor d-flex align-items-center justify-content-around">
         <app-sponsor />
     </section>
-    <section class="rules d-flex flex-column align-items-center">
+    <section id="blog" class="rules d-flex flex-column align-items-center">
         <div>
             <div class="logo d-flex flex-column align-items-center">
                 <img src="../assets/img/OIP.jpg" alt="">
@@ -352,4 +352,5 @@ export default {
             }
         }
     }
-}</style>
+}
+</style>

@@ -11,27 +11,27 @@ export default {
                 },
                 {
                     title: 'FIXTURES & RESULTS',
-                    link: '#',
+                    link: '#ranking',
                 },
                 {
                     title: 'LEAGUE TABLE',
-                    link: '#', 
+                    link: '#ranking', 
                 },
                 {
                     title: 'PLAYERS',
-                    link: '#', 
+                    link: '#players', 
                 },
                 {
                     title: 'GALLERY',
-                    link: '#', 
+                    link: '#gallery', 
                 },
                 {
                     title: 'BLOG',
-                    link: '#', 
+                    link: '#blog', 
                 },
                 {
                     title: 'CONTACT',
-                    link: '#', 
+                    link: '#contacts', 
                 },
             ],
             arrSlider: [

@@ -8,7 +8,7 @@ export default {
 </script>
 
 <template>
-    <li><a href="#">{{ title }}</a></li>
+    <li><a :href="link">{{ title }}</a></li>
 </template>
 
 <style lang="scss" scoped>

@@ -5,17 +5,19 @@ export default {
     },
     data() {
         return {
-
+            expanded: false,
         }
     },
     methods: {
-        
+        expandCard() {
+            this.expanded = !this.expanded;
+        },
     }
 }
 </script>
 
 <template>
-  <div class="card d-flex flex-column">
+  <div class="card d-flex flex-column" :class="{ 'expanded': expanded }">
     <div class="img d-flex flex-column align-items-center">
         <img :src="football.img" :alt="football.title">
         <small>{{ football.date }} - Football</small>
@@ -23,7 +25,7 @@ export default {
     <div class="info d-flex flex-column align-items-center">
         <h2>{{ football.title }}</h2>
         <small>{{ football.description }}</small>
-        <button>More</button>
+        <button @click="expandCard">More</button>
     </div>
   </div>
 </template>
@@ -36,6 +38,12 @@ export default {
     -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.83);
     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.83);
     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.83);
+    &.expanded {
+        width: 100%;
+        margin-inline: 0;
+        margin-bottom: 5rem;
+        transition: all 0.3s ease-in-out;
+    }
     img {
         width: 70%;
         margin-top: 1rem;
@@ -57,4 +65,9 @@ export default {
 </style>
 
 
-
+&.expanded {
+    width: 100%;
+    margin-inline: 0;
+    margin-bottom: 5rem;
+    transition: all 0.3s ease-in-out;
+}

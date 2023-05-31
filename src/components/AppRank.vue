@@ -100,7 +100,7 @@ export default {
       <tbody>
         <tr v-for="(team, index) in rankings" :key="team.position">
           <td>{{ index + 1 }}</td>
-          <td>
+          <td colspan="">
             <img :src="team.logo">
           </td>
           <td>{{ team.team }}</td>
