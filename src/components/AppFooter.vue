@@ -5,36 +5,38 @@ export default {
   components: { AppEducation, AppQuickLinks },
     data() {
         return {
-            arrList: [
+            arrList1: [
+                
                 {
-                    title2: 'HOME',
+                    title: 'FIXTURES & RESULTS',
+                    link: '#',
+                },
+                {
+                    title: 'LEAGUE TABLE',
+                    link: '#',
+                },
+                {
+                    title: 'PLAYERS',
+                    link: '#',
+                },
+                {
+                    title: 'GALLERY',
+                    link: '#',
+                },
+            ],
+            arrList2: [
+                {
+                    title: 'HOME',
                     link: '#' ,
                 },
                 {
-                    title1: 'FIXTURES & RESULTS',
+                    title: 'BLOG',
                     link: '#',
                 },
                 {
-                    title1: 'LEAGUE TABLE',
+                    title: 'CONTACT',
                     link: '#',
                 },
-                {
-                    title1: 'PLAYERS',
-                    link: '#',
-                },
-                {
-                    title1: 'GALLERY',
-                    link: '#',
-                },
-                {
-                    title2: 'BLOG',
-                    link: '#',
-                },
-                {
-                    title2: 'CONTACT',
-                    link: '#',
-                },
-
             ],
         }
     }
@@ -90,7 +92,7 @@ export default {
                 <div class="content">
                     <h2>Education</h2>
                     <ul>
-                        <app-education v-for="title in arrList" :key="title.title" :title="title.title1" :link="title.link" />
+                        <app-education v-for="title in arrList1" :key="title.title" :title="title.title" :link="title.link" />
                     </ul>
                 </div>
             </div>
@@ -98,7 +100,7 @@ export default {
                 <div class="content">
                     <h2>Quick Links</h2>
                     <ul>
-                        <app-quick-links v-for="title in arrList" :key="title.title" :title="title.title2" :link="title.link" />
+                        <app-quick-links v-for="title in arrList2" :key="title.title" :title="title.title" :link="title.link" />
                     </ul>
                 </div>
             </div>
