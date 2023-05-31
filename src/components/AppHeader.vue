@@ -69,14 +69,18 @@ export default {
             </nav>
         </div>
         <div class="carousel d-flex justify-content-between align-items-center">
-            <font-awesome-icon class="chevron" :icon="['fas', 'chevron-left']" />
+            <div class="chevron_circle">
+                <font-awesome-icon class="chevron" :icon="['fas', 'chevron-left']" />
+            </div>
             <div class="text d-flex flex-column align-items-center">
                 <h1>Football Club</h1>
                 <h1>Sport club</h1>
                 <small>Private football matches</small>
                 <button><small>Learn More</small></button>
             </div>
-            <font-awesome-icon class="chevron" :icon="['fas', 'chevron-right']" />
+            <div class="chevron_circle">
+                <font-awesome-icon class="chevron" :icon="['fas', 'chevron-right']" />
+            </div>
         </div>
     </header>
 </template>
@@ -114,12 +118,22 @@ header {
             font-weight: 600;
         }
     }
-        .chevron {
-           color: white;
-           border: 1px solid white;
-           border-radius: 100%;
-           font-size: 2rem;
-           margin: 0 1rem;
+        .chevron_circle {
+            position: relative;
+            width: 70px;
+            height: 70px;
+           .chevron {
+                color: white;
+                border: 1px solid white;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                box-sizing: border-box;
+           }
         }
     }
 }
