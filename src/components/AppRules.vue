@@ -41,6 +41,9 @@ export default {
         margin-top: 1rem;
     }
     .info {
+        small {
+            padding-inline: 2rem;
+        }
         button {
             background-color: black;
             color: white;
