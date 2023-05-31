@@ -130,7 +130,11 @@ header {
         position: relative;
         .carousel-caption {
             position: absolute;
-            top: 50%;
+            top: 40%;
+            h1 {
+                font-weight: 700;
+                font-size: 4rem;
+            }
             button {
                 background-color: transparent;
                 border-radius: 1.3rem;
