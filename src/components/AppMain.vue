@@ -245,10 +245,10 @@ export default {
             <app-rules v-for="rule in this.rules" :key="rule.title" :football="rule" />
         </div>
         <div class="buttons d-flex justify-content-center">
-            <button @click="expandCard"></button>
-            <button @click="expandCard"></button>
-            <button @click="expandCard"></button>
-            <button @click="expandCard"></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
         </div>
     </section>
 </template>

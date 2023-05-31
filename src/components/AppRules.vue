@@ -11,7 +11,7 @@ export default {
     methods: {
         expandCard() {
             this.expanded = !this.expanded;
-        },
+        }, 
     }
 }
 </script>
@@ -28,9 +28,7 @@ export default {
         <button @click="expandCard">More</button>
     </div>
   </div>
-  <!-- <div class="buttons d-flex align-items-end justify-content-center">
-    <button @click="expandCard"></button>
-  </div> -->
+
 </template>
 
 <style lang="scss" scoped>
@@ -65,16 +63,5 @@ export default {
         }
     }
 }
-// .buttons {
-//     button {
-//         padding: .2rem 1rem;
-//         margin-inline: .5rem;
-//         border-radius: 2rem;
-//         background-color: #EBEBEB;
 
-//         &:hover {
-//             background-color: black;
-//         }
-//     }
-// }
 </style>
