@@ -8,7 +8,9 @@ export default {
 </script>
 
 <template>
-    <li><a :href="link">{{ title }}</a></li>
+    <div>
+        <li><a :href="link">{{ title }}</a></li>
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -21,6 +23,17 @@ li {
         &:hover {
             text-decoration-line: underline;
             cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    div {
+        
+        li {
+           font-size: .8rem;
+           white-space: nowrap;
+           
         }
     }
 }

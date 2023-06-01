@@ -134,6 +134,9 @@ header {
             h1 {
                 font-weight: 700;
                 font-size: 4rem;
+                @media (max-width: 768px) {
+                    font-size: 2rem;
+                }
             }
             button {
                 background-color: transparent;
@@ -143,6 +146,9 @@ header {
                 border: 2px solid white;
                 margin-top: 1rem;
                 font-weight: 600;
+                @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
             }
         }
     }
