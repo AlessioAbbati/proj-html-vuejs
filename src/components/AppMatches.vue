@@ -9,7 +9,7 @@ export default {
 <template>
   <div class="row">
     <div class="col-sm">
-      <div class="content d-flex align-items-center">
+      <div class="content d-flex align-items-center justify-content-center">
         <img :src="match.logo1" alt="">
         <h2>{{ match.team1 }}</h2>
       </div>
@@ -25,7 +25,7 @@ export default {
         <img :src="match.logo2" alt="">
       </div>
     </div>
-    <div class="info d-flex justify-content-center text-light">
+    <div class="info d-flex justify-content-center text-light justify-content-center">
       <span>
         <i class="fa-solid fa-calendar-days"></i>
         {{ match.date }}
@@ -44,16 +44,27 @@ export default {
   margin-bottom: 1rem;
   div {
     .content {
-      
+      img {
+        @media (max-width: 768px) {
+          width: 30%;
+        }
+      }
       h2 {
       white-space: nowrap;
       color: white;
+      @media (max-width: 768px) {
+          font-size: 1.5rem;
+        }
       }
       span {
       margin-top: 1rem;
       font-size: 4rem;
       color: white;
       font-weight: 700;
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+      }
       }
     }
   }
