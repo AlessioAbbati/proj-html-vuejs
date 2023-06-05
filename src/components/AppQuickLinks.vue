@@ -20,6 +20,9 @@ li {
         &:hover {
             text-decoration: underline;
         }
+        @media (max-width: 1024px) {
+            font-size: .7rem;
+        }
     }
 }
 </style>

@@ -187,6 +187,9 @@ footer {
 
         h2 {
             white-space: nowrap;
+            @media (max-width: 1024px) {
+                font-size: 1.5rem;
+            }
         }
 
         ul {
