@@ -16,7 +16,7 @@ export default {
         </div>
         <div class="col-sm">
             <div class="content d-flex align-items-center justify-content-center">
-                <span>VS</span>
+                <span class="versus">VS</span>
             </div>
         </div>
         <div class="col-sm">
@@ -44,15 +44,23 @@ export default {
 <style lang="scss" scoped>
 .row {
   background-color: white;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   div {
     .content {
-      
+      @media (max-width: 768px) {
+        justify-content: center;
+      }
       h2 {
       white-space: nowrap;
       }
       span {
       font-size: 6rem;
       font-weight: 700;
+      @media (max-width: 768px) {
+        font-size: 4rem;
+      }
       }
     }
   }
@@ -71,6 +79,5 @@ export default {
     }
   }
 }
-
 </style>
 
