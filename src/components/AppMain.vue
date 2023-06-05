@@ -296,6 +296,10 @@ export default {
     h2 {
         margin: 2rem 0;
     }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
     .container {
         & > :nth-child(odd) {
             background-color: #EBEBEB;
