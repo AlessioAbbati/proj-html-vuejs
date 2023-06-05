@@ -129,10 +129,14 @@ footer {
     .content {
         color: white;
         margin: 3rem 1rem;
+        @media (max-width: 414px) {
+            align-items: center;
+        }
 
         .img {
             width: 100%;
             margin-bottom: 1rem;
+           
 
             img {
                 width: 20%;
@@ -140,6 +144,9 @@ footer {
                     width: 35%;
                     margin-left: 3rem;
                 }
+                @media (max-width: 414px) {
+                    margin-left: 7rem;
+                }   
             }
         }
 
@@ -157,6 +164,9 @@ footer {
                 margin-top: 1rem;
                 margin-left: 2rem;
             }
+            @media (max-width: 414px) {
+                margin-left: .5rem;
+            }   
 
             .icon {
                 border: 1px solid white;
