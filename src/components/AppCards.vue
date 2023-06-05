@@ -30,12 +30,12 @@ export default {
         }
     }
     .info {
-    background-color: black;
-    border-radius: 1rem;
-    width: 100%;
-    span {
-        color: white;
+        background-color: black;
+        border-radius: 1rem;
+        width: 100%;
+        span {
+            color: white;
+        }
     }
-}
 }
 </style>

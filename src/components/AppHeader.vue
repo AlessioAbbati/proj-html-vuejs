@@ -155,4 +155,26 @@ header {
     
     
 }    
+
+@media (max-width: 414px) {
+    ul {
+        flex-wrap: wrap;
+    }
+    .img {
+        img {
+            width: 60%;
+            margin-left: 5px;
+        }
+    }
+    .icon {
+        width: 1.3rem;
+        margin-right: 10px;
+    }
+    .carousel-control-prev {
+        margin-top: 4rem;
+    }
+    .carousel-control-next {
+        margin-top: 4rem;
+    }
+}
 </style>
