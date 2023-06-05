@@ -88,7 +88,7 @@ export default {
                     <button>Subscribe &RightArrow;</button>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 links">
                 <div class="content">
                     <h2>Education</h2>
                     <ul>
@@ -96,7 +96,7 @@ export default {
                     </ul>
                 </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 links">
                 <div class="content">
                     <h2>Quick Links</h2>
                     <ul>
@@ -116,6 +116,16 @@ footer {
     width: 100%;
     background-image: url('../assets/img/footer-bg-football.jpg');
     background-size: cover;
+    .row {
+        @media (max-width: 768px) {
+            justify-content: space-around;
+        }
+    }
+    .links {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 
     .content {
         color: white;
@@ -127,6 +137,10 @@ footer {
 
             img {
                 width: 20%;
+                @media (max-width: 768px) {
+                    width: 35%;
+                    margin-left: 3rem;
+                }
             }
         }
 
@@ -134,11 +148,16 @@ footer {
             span {
                 margin-bottom: .6rem;
                 padding-inline: .6rem;
+                white-space: nowrap;
             }
         }
 
         .socials {
             font-size: 1.5rem;
+            @media (max-width: 768px) {
+                margin-top: 1rem;
+                margin-left: 2rem;
+            }
 
             .icon {
                 border: 1px solid white;
