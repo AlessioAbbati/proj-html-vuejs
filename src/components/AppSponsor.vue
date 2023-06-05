@@ -37,6 +37,9 @@ export default {
     border-radius: 2rem;
     margin-inline: .5rem;
     width: calc((100% / 6) - 2.5rem);
+    @media (max-width: 768px) {
+        width: calc((100% / 6) - 1rem);
+    }
     } 
 </style>
 
