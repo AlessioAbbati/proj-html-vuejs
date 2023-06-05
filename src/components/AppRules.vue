@@ -39,14 +39,17 @@ export default {
     -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.83);
     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.83);
     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.83);
-    @media (max-width: 768px) {
-            width: calc(100% / 2);
-        }
     &.expanded {
         width: 50%;
         margin-inline: 0;
         margin-bottom: 5rem;
         transition: all 0.3s ease-in-out;
+    }
+    @media (max-width: 768px) {
+        width: calc(100% / 2);
+        &.expanded {
+            width: 70%;
+        }
     }
     img {
         width: 70%;

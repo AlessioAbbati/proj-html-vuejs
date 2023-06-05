@@ -112,7 +112,6 @@ export default {
 
 <style lang="scss" scoped>
 footer {
-    height: 25rem;
     width: 100%;
     background-image: url('../assets/img/footer-bg-football.jpg');
     background-size: cover;
@@ -185,5 +184,6 @@ footer {
         }
 
     }
-}</style>
+}
+</style>
 
