@@ -279,6 +279,10 @@ export default {
         background-color: transparent;
         padding-inline: 1rem;
         border-radius: 2rem;
+        @media (max-width: 414px) {
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
     }
 
     
