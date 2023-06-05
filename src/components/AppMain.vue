@@ -241,7 +241,7 @@ export default {
                 <small>Be aware of the football world</small>
             </div>
         </div>
-        <div class="d-flex">
+        <div class="d-flex card_rules">
             <app-rules v-for="rule in this.rules" :key="rule.title" :football="rule" />
         </div>
         <div class="buttons d-flex justify-content-center">
@@ -281,15 +281,17 @@ export default {
         border-radius: 2rem;
     }
 
-    button {
-        color: white;
-        background-color: black;
-        border: 1px solid white;
-        border-radius: 3rem;
-        padding: .6rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+    
+        button {
+            color: white;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 3rem;
+            padding: .6rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    
 }
 
 .rankings {
@@ -341,6 +343,14 @@ export default {
             font-weight: 700;
         }
     }
+    .card_rules {
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
     .buttons {
         margin-bottom: 3rem;
 
