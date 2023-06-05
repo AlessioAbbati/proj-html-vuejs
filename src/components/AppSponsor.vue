@@ -40,6 +40,10 @@ export default {
     @media (max-width: 768px) {
         width: calc((100% / 6) - 1rem);
     }
-    } 
+    @media (max-width: 414px) {
+        width: calc((100% / 2) - 1rem);
+        margin-bottom: .5rem;
+    }
+} 
 </style>
 

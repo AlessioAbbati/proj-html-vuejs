@@ -325,8 +325,12 @@ export default {
 .sponsor {
     width: 100%;
     background-color: black;
-    height: 12rem;
     padding-inline: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @media (max-width: 414px) {
+        flex-wrap: wrap;
+    }
 }
 
 .rules {
